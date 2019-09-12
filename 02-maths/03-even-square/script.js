@@ -12,5 +12,14 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let array=[];
+        
+        
+        for(let i = 0; i < 21;i+=2){
+            let square= i*i;
+            array.push(square);
+        }
+        
+        alert(array);
     });
 })();

@@ -14,5 +14,14 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        
+        let result=1;
+      let nbr =document.getElementById("number").value;
+        for(i=1;i<=nbr;i++){
+            
+            result = result *i;
+            
+        }
+        alert(result);
     });
 })();

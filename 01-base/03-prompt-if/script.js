@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let Cake=confirm("Voulez vous du gateau?: ");
+    if (Cake == true) {
+        alert("Hmmm, c'est bon le gateau!!!!");
+    }
+    else {
+        alert("Pk t'aimes pas le gateau?");
+    }
 })();

@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    let conf;
+    while(conf=0){
+    let age=prompt("Quel age avez vous? :");
+    let sex=prompt("Etes vous une femme ou un homme?: ");
+    let city=prompt("Ou habitez vous?: ");
+    let conf=confirm("Donc vous avez " +age+ " ans, vous etes une/un " +sex+ "et vous habitez à " +city+ " Est ce correct?: ");
+    }
+
+    })();
