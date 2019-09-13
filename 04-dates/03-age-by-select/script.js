@@ -11,4 +11,36 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+        
+        let jour = document.getElementById("dob-day").value;
+        let mois = document.getElementById("dob-month").value;
+        let annee = document.getElementById("dob-year").value;
+        let userMonth;
+        let userDay;
+        let pDate = new Date();
+        
+        /* calcul de l'annee */
+        let userYear =  pDate.getFullYear() - annee;
+        /* calcul du mois */
+        if (pDate.getMonth()>mois){
+            userMonth = pDate.getMonth() - mois;
+        }
+        else {
+            userMonth = mois - pDate.getMonth();
+        }
+        /* calcul du jour */
+
+        if (pDate.getDay() > jour ){
+            userDay = pDate.getDay() - jour;
+        }
+        else{
+            userDay = jour - pDate.getDay();
+        }
+
+        console.log("Vous avez "+userYear+" ans, "+userMonth+" mois et "+userDay+" jours");
+
+
+
+    });
 })();

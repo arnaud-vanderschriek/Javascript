@@ -20,7 +20,7 @@
     let s = maDate.getSeconds();
     console.log(s);
     console.log(h+":"+m+":"+s);
-    if(h<17 && m<30){
+    if((h<17)&&(m<30)){
         document.getElementById("target").innerHTML="Bonjour";
     }
     else{

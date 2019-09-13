@@ -13,21 +13,21 @@
     // your code here
     document.getElementById("red").addEventListener("click", () => {
     
-        document.getElementById("bcg").style.backgroundColor="red";
+        document.body.style.backgroundColor="red";
     });
 
     document.getElementById("green").addEventListener("click", () => {
     
-        document.getElementById("bcg").style.backgroundColor="green";
+        document.body.style.backgroundColor="green";
     });
 
     document.getElementById("yellow").addEventListener("click", () => {
     
-        document.getElementById("bcg").style.backgroundColor="yellow";
+        document.body.style.backgroundColor="yellow";
     });
 
     document.getElementById("blue").addEventListener("click", () => {
     
-        document.getElementById("bcg").style.backgroundColor="blue";
+        document.body.style.backgroundColor="blue";
     });
 })();
