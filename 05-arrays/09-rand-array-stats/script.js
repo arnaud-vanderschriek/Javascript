@@ -11,4 +11,10 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+        
+        
+        document.getElementById("n-1").innerHTML=Math.floor(Math.random()*10);
+        
+    });
 })();

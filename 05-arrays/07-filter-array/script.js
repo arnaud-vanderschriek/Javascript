@@ -89,4 +89,24 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+     
+
+   
+   // Avec la méthode filter 
+    console.log(people.filter(elem => elem.age>=18));
+    
+
+/*Test personnel sans la méthode "filter" 
+
+   for(i=0;i<people.length;i++){
+       let people18 =  people[i].age>18;
+        console.log(people18);
+        if(people18==true){
+            console.log(people[i].firstname+","+people[i].lastname+";"+people[i].age);
+        }
+   } */
+        
+    
+    });
 })();

@@ -89,4 +89,7 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click",()=>{
+        console.log(people[8].email);
+    });
 })();
