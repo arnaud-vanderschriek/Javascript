@@ -26,4 +26,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", ()=> {
+
+        fruits.forEach(myLoop);
+
+    function myLoop(item){
+        console.log(item);
+           }
+    });
 })();

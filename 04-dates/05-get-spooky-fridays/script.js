@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+  
+   document.getElementById("run").addEventListener("click", ()=>{
+
+    let pAnnee=[];
+    
+    let options= { month:"long", day:"numeric"};
+    let annee = document.getElementById("year").value;
+        
+        for (i=0;i <=11;i++){
+            
+            pAnnee = new Date(annee, i,13);
+            console.log(pAnnee);
+
+           if(pAnnee.getDay()==5){
+            alert("C'est le mois de: "+pAnnee.toLocaleDateString("fr-FR", options));              
+           }
+}
+     
+  
+    
+    
+    });
+
+
+
 })();

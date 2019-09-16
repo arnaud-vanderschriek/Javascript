@@ -37,6 +37,13 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
-
+       //   console.log(people[0].lastname); Pour afficher le lastname du premier élément //
     // your code here
+   document.getElementById("run").addEventListener("click", ()=>{
+        people.forEach(name);
+
+        function name(people){
+            console.log(people.lastname);
+        }
+    });
 })();

@@ -26,4 +26,8 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        alert(fruits[3]);
+    } );
 })();

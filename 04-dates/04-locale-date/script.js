@@ -15,6 +15,6 @@
     let pDate = new Date();
     let options= {weekday:"long", year:"numeric", month:"long", day:"numeric"};
     console.log(pDate.toLocaleDateString("fr-FR", options));
-    document.getElementById("target").innerHTML= (pDate.toLocaleDateString("fr-FR", options,)+", "+pDate.getHours()+":"+pDate.getMinutes());
+    document.getElementById("target").innerHTML=( pDate.toLocaleDateString("fr-FR", options,)+", "+pDate.getHours()+":"+pDate.getMinutes());
 
 })();
