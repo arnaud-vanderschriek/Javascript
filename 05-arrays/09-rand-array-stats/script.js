@@ -12,9 +12,37 @@
 (() => {
     // your code here
     document.getElementById("run").addEventListener("click", ()=>{
-        
-        
-        document.getElementById("n-1").innerHTML=Math.floor(Math.random()*10);
-        
+    let arr=[];
+    document.querySelectorAll("td[id^=n-]").forEach(nbrAlea);
+   function nbrAlea(elem){
+    let nbr=Math.floor(Math.random()*100);
+    elem.innerText=nbr;
+    arr.push(nbr);
+   }
+   console.log(arr);
+
+   let nbrMax = arr.reduce(function(a,b){
+       return Math.max(a,b);
+
+   });
+   console.log(nbrMax);
+
+   let nbrMin = arr.reduce(function(a,b){
+       return Math.min(a,b);
+
+   });
+   console.log(nbrMin);
+   document.getElementById("min").innerHTML=nbrMin;
+   document.getElementById("max").innerHTML=nbrMax;
+   let somme=0;
+   for(i=0;i<arr.length;i++){
+    somme=somme+arr[i];
+    }
+   console.log(somme);
+   document.getElementById("sum").innerHTML=somme;
+   let moy=somme/10;
+   console.log(moy);
+   document.getElementById("average").innerHTML=moy;
+   
     });
 })();

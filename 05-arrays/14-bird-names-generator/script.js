@@ -39,4 +39,21 @@
     ]);
 
     // your code here
+   document.getElementById("run").addEventListener("click", ()=>{
+
+        let birdRand = birds[Math.floor(Math.random()*birds.length)];
+      //  console.log(birdRand);
+       let adj= Array.from(adjectives);
+     //  console.log(adj);
+        let randAdj = adj[Math.floor(Math.random()*adj.length)];
+        if(birdRand.fem==true){
+            document.getElementById("target").innerHTML=birdRand.name+" "+(randAdj+"e");
+            console.log(randAdj);
+        }
+        else{
+        document.getElementById("target").innerHTML=birdRand.name+" "+randAdj;
+        }
+    //console.log(birds[1].fem);
+        
+   });
 })();
