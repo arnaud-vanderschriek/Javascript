@@ -11,4 +11,5 @@
 
 (() => {
     // your code here
+    document.getElementsByClassName("material"^="target").innerHTML="owned";
 })();

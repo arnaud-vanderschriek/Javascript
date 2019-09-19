@@ -27,4 +27,26 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+   /*    for (let prop in defaultProps) {
+          console.log(`defaultProps.${prop}=${defaultProps[prop]}`);      
+           }
+       console.log(defaultProps.os);
+       console.log(computers[2]+=defaultProps.os);   */
+
+       for(i=0;i<computers.length;i++){
+           if(computers[i].available==undefined){
+                computers[i].available=true;
+           }
+           if(computers[i].os==undefined){
+               computers[i].os="linux";
+           }
+           if(computers[i].user==undefined){
+               computers[i].user= null;
+           }
+          
+       }
+       console.log(computers);
+    });
 })();

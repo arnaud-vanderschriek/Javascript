@@ -16,4 +16,25 @@
         }
     }
     // your code here
+
+  
+  class Cat extends Animal{
+      constructor(name,greeting){
+        super();
+        this.name = "kitty";
+        Cat.greeting = "Hello";
+      }
+  }
+  class Dog extends Animal{
+      constructor(name,greeting){
+        super();
+        this.name = "Dog";
+        Dog.greeting = "Hello";
+      }
+  }
+
+  let kitty = new Cat("Kitty","Hello");
+  let Chien = new Dog("Machin", "Hello");
+  console.log(kitty.sayHello());
+  console.log(Chien.sayHello());
 })();
