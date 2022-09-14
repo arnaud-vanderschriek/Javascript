@@ -10,12 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    let conf;
-    while(conf=0){
-    let age=prompt("Quel age avez vous? :");
-    let sex=prompt("Etes vous une femme ou un homme?: ");
-    let city=prompt("Ou habitez vous?: ");
-    let conf=confirm("Donc vous avez " +age+ " ans, vous etes une/un " +sex+ "et vous habitez à " +city+ " Est ce correct?: ");
+    let inputAge = document.querySelector('#inputAge1-4')
+    let inputCity = document.querySelector('#inputCity1-4')
+    let checkBox = document.querySelectorAll('.checkBox1-4')
+
+    const handleInput = (e) => {
+        console.log(e.target.value)
+
     }
 
-    })();
+    inputAge.addEventListener("change", handleInput)    
+    inputCity.addEventListener("change", (e) => handleInput(e))    
+
+
+})();

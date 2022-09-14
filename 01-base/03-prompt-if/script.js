@@ -10,11 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    let Cake=confirm("Voulez vous du gateau?: ");
-    if (Cake == true) {
-        alert("Hmmm, c'est bon le gateau!!!!");
+    let input = document.querySelectorAll(".checkBox")
+    let response = document.querySelector("#response")
+
+    const inputChecked = (e) => {
+        if(e.target.value == 'yes') {
+            response.innerHTML = "Le gateau c'est trop bon !"
+        }
+        else {
+            response.innerHTML = "Je comprends pas le gateau c'est trop bon !"
+        }
     }
-    else {
-        alert("Pk t'aimes pas le gateau?");
+    
+    for(let i = 0; i < input.length ; i++) {
+        input[i].addEventListener('click',(e) => inputChecked(e))
     }
-})();
+})(); 

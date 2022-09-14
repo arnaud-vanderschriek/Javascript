@@ -270,3 +270,39 @@ ol#target {
     font-size: 1.4rem;
     color: slategray;
 }
+
+
+
+/* Section CSS pour exercices javascript */
+
+
+/* exercice 1.3 */
+
+#paragraf {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* exercice 1.4 */
+#dialog1-4 {
+/* display: none; */
+}
+
+#popUp1-4 {
+    display: none;
+    background-color: #16232E;
+    color:#efefef;
+    border-color: #666;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+    position: fixed;
+    top: 42%;
+    right: 42%;
+}
+
+#innerPopUp {
+    display: flex;
+    align-self: center;
+}
