@@ -24,7 +24,8 @@
     inputAge.addEventListener("change", (e) => {
         age.innerHTML = e.target.value;
 
-    })    
+    })   
+
     inputCity.addEventListener("change", (e) => {
         city.innerHTML = e.target.value;
     })    
@@ -32,8 +33,8 @@
     for(let i = 0; i < checkBox.length; i++) {
         checkBox[i].addEventListener('click', (e) => {
             gender.innerHTML = e.target.value
-        })
-    }
+        })}
+    
 
     buttonOpenPopup.addEventListener('click', () => {
         popUp.className = 'popUp1-42'
