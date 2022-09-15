@@ -13,14 +13,34 @@
     let inputAge = document.querySelector('#inputAge1-4')
     let inputCity = document.querySelector('#inputCity1-4')
     let checkBox = document.querySelectorAll('.checkBox1-4')
+    let buttonOpenPopup = document.querySelector('#button1-4')
+    let popUp = document.querySelector('.popUp1-4')
+    let buttonExitPopup = document.querySelector(".buttonExitPopUP1-4")
+    let age = document.querySelector("#popUpLi1-4Age")
+    let city = document.querySelector("#popUpLi1-4City")
+    let gender = document.querySelector("#popUpLi1-4Gender")
 
-    const handleInput = (e) => {
-        console.log(e.target.value)
 
+    inputAge.addEventListener("change", (e) => {
+        age.innerHTML = e.target.value;
+
+    })    
+    inputCity.addEventListener("change", (e) => {
+        city.innerHTML = e.target.value;
+    })    
+
+    for(let i = 0; i < checkBox.length; i++) {
+        checkBox[i].addEventListener('click', (e) => {
+            gender.innerHTML = e.target.value
+        })
     }
 
-    inputAge.addEventListener("change", handleInput)    
-    inputCity.addEventListener("change", (e) => handleInput(e))    
+    buttonOpenPopup.addEventListener('click', () => {
+        popUp.className = 'popUp1-42'
 
+    })
 
+    buttonExitPopup.addEventListener('click', () => {
+        popUp.className = 'popUp1-4'
+    })
 })();

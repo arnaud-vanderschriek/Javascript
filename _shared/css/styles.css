@@ -288,21 +288,26 @@ ol#target {
 #dialog1-4 {
 /* display: none; */
 }
-
-#popUp1-4 {
+    
+.popUp1-4 {
     display: none;
-    background-color: #16232E;
-    color:#efefef;
-    border-color: #666;
-    border-radius: 10px;
-    height: 150px;
-    width: 300px;
-    position: fixed;
-    top: 42%;
-    right: 42%;
 }
 
-#innerPopUp {
+.popUp1-42 {
+    display: block;
+    background-color: #124975;
+    color:#efefef;
+    border-color: rgb(245, 241, 241);
+    border-radius: 10px;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    top: 42%;
+    right: 42%;   
+}
+
+#innerPopUP1-4 {
     display: flex;
+    flex-direction: column;
     align-self: center;
 }
